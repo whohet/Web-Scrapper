@@ -90,7 +90,7 @@ This is a Web Scrapper which scrapes articles from GeeksForGeeks, weather data f
 * [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 * [Requests](https://requests.readthedocs.io/en/master/index.html)
 * [Google](https://pypi.org/project/google/)
-* [OpenWeatherAPI](https://openweathermap.org/api)
+* [OpenWeatherAPI](https://openweathermap.org/api) (will require API key)
 
 
 
