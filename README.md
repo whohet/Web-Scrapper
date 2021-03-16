@@ -90,7 +90,7 @@ This is a Web Scrapper which scrapes articles from GeeksForGeeks, weather data f
 * [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 * [Requests](https://requests.readthedocs.io/en/master/index.html)
 * [Google](https://pypi.org/project/google/)
-* [OpenWeatherAPI](https://openweathermap.org/api) (will require API key)
+* [OpenWeatherAPI](https://openweathermap.org/api) 
 
 
 
@@ -133,6 +133,7 @@ Enter city name and click on search.
 Avoid any typos in the city name.
 
 If the web scrapper succeeds to get the result, it would display it or else an error would be generated.
+(will require API key get it from [here](https://openweathermap.org/api))
 
 * News Search
 Enter city name and click on search.
