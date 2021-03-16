@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1291</width>
+    <height>757</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Web Scrapper</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>C:/Users/Het/Downloads/231223193437201742324-removebg-preview.png</normaloff>C:/Users/Het/Downloads/231223193437201742324-removebg-preview.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(120, 104, 230);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="gfgSearch">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>260</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Franklin Gothic Medium</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(239, 251, 255);</string>
+    </property>
+    <property name="text">
+     <string>GeeksforGeeks Articles</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="weatherSearch">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>330</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Franklin Gothic Medium</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(239, 251, 255);</string>
+    </property>
+    <property name="text">
+     <string>Current Weather</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="newsSearch">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>400</y>
+      <width>261</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Franklin Gothic Medium</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(239, 251, 255);</string>
+    </property>
+    <property name="text">
+     <string>News</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>180</y>
+      <width>1291</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;
+font: 87 18pt &quot;Arial Black&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;What do you want to search?&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>1291</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt;Web-Scrapper &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>610</y>
+      <width>1291</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Technologies Used - Python&lt;br/&gt;Libraries Used - BeautifulSoup4, QT5, Requests, Google&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;APIs Used - OpenWeatherAPI &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1291</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

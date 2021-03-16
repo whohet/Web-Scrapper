@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1291</width>
+    <height>757</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Web Scraper</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>C:/Users/Het/Downloads/231223193437201742324-removebg-preview.png</normaloff>C:/Users/Het/Downloads/231223193437201742324-removebg-preview.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(120, 104, 230);
+font: 9pt &quot;Arial&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="Search_Button">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>70</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Click to search</string>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Click&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(239, 251, 255);
+font: 12pt &quot;Microsoft YaHei&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="Output">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>1251</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Ebrima</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="statusTip">
+     <string>Output of your search</string>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Search Output&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(239, 251, 255);
+font: 12pt &quot;Ebrima&quot;;</string>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustIgnored</enum>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="Search_item">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>1141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Enter search item</string>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Search text&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(239, 251, 255);
+font: 9pt &quot;Arial&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Title">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>29</y>
+      <width>1251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
