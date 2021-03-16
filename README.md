@@ -161,6 +161,8 @@ Het Patel - [@whohet](https://github.com/whohet) - whohet@gmail.com
 
 Divya Patel - [@dd-712](https://github.com/dd-712) - divya807950@gmail.com
 
+Hrushi Patel - [@Hp-175](https://github.com/Hp-175) - patelhrushi16@gmail.com
+
 Project Link: [https://github.com/whohet/Web-Scrapper](https://github.com/whohet/Web-Scrapper)
 
 
