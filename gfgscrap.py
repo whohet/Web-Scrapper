@@ -47,6 +47,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                                 continue
                             stringappend = stringappend + '\n' + c
                         self.Output.setText(stringappend)
+
                     else:
                         status = status.text.split('\n')
 
@@ -62,19 +63,20 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                         content_img = content.find('div', class_='text')
 
                         index_of_images = list()
+                        index_of_images_after = list()
                         image_names = list()
                         contents = "start_offf!!!!"
-
+                        p=1
                         for c in content_img:
                             if (c.find('img') is not None) and (c.find('img') != -1):
                                 index_of_images.append(contents)
-                                self.Output.setText('Hello\n')
                                 response = requests.get(c.img['src'])
                                 name='image'+str(len(image_names))
                                 file = open(name, "wb")
                                 file.write(response.content)
                                 file.close()
                                 image_names.append(name)
+                                p=0
                             else:
                                 for lines in str(c).splitlines():
                                     try:
@@ -86,15 +88,19 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                                     contentsv = lines[start:end]
                                     if contentsv != "":
                                         contents = contentsv
+                                    if p==0:
+                                        p=1
+                                        index_of_images_after.append(contents)
 
                         content = content_img.text.split('\n')
                         st += "<br />Content: <br />"
 
                         img_url = 0
-                        links = []
+
                         while img_url < len(index_of_images) and index_of_images[img_url] == "start_offf!!!!":
                             st += "<br /><img src=\"{}\"/><br /><br />".format(image_names[img_url])
                             img_url += 1
+
                         for c in content:
                             if len(c) == 0 or c.startswith('Attention') or c == '\n':
                                 continue
@@ -107,13 +113,21 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                             elif c.startswith('This article is contributed') or c.startswith('Please comment'):
                                 continue
 
+                            if img_url < len(index_of_images) and index_of_images_after[img_url] in c and len(c.strip()) != 0:
+                                st += ("<br /><img src=\"{}\"><br /><br />".format(image_names[img_url]))+ c + "<br />"
+                                img_url += 1
+                                continue
+
                             st += c + "<br />"
-                            self.Output.append(c + '\n')
+
 
                             if img_url < len(index_of_images) and index_of_images[img_url] in c and len(c.strip()) != 0:
                                 st += ("<br /><img src=\"{}\"><br /><br />".format(image_names[img_url]))
                                 img_url += 1
                                 continue
+                        while img_url<len(index_of_images):
+                            st += ("<br /><img src=\"{}\"><br /><br />".format(image_names[img_url]))
+                            img_url += 1
                         st+="<br /><br /><br />"
                         self.Output.setHtml(st)
                         for i in image_names:
