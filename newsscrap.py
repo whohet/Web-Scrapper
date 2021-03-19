@@ -23,6 +23,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         city = self.Search_item.toPlainText()
         city += '-news'
         url = 'https://www.ndtv.com/' + city
+        # creating an HTTP request
         page = requests.get(url)
         if page.status_code == 404:
             page = requests.get('https://www.ndtv.com/others-news')
