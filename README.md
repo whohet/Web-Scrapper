@@ -170,7 +170,7 @@ Project Link: [https://github.com/whohet/Web-Scrapper](https://github.com/whohet
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Vivek Ramnani](https://github.com/vivekramnani) and * [Yusuf Kharoda](https://github.com/kharyusuf) - For Providing Such Great Ideas
+* [Vivek Ramnani](https://github.com/vivekramnani) and [Yusuf Kharoda](https://github.com/kharyusuf) - For Providing Such Great Ideas
 
 [contributors-shield]: https://img.shields.io/github/contributors/whohet/Web-Scrapper
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
