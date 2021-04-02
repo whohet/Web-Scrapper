@@ -13,7 +13,7 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1291, 757)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("C:/Users/Het/Downloads/231223193437201742324-removebg-preview.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet("background-color: rgb(120, 104, 230);\n"
 "font: 9pt \"Arial\";")
